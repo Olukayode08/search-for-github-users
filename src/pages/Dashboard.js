@@ -9,10 +9,12 @@ const Dashboard = () => {
     const { loading } = useContext(GithubContextApi);
     if(loading){
       return (
-        <main>
+        <>
           <h1 className='loading'>Loading...</h1>
-          <Loading />
-        </main>
+          <main>
+            <Loading />
+          </main>
+        </>
       );
     }
   return (
@@ -20,7 +22,7 @@ const Dashboard = () => {
       <main>
         <div className='heading'>
         <h3 className='header'>Github Developers</h3>
-        <img className='img' src={image} alt="Github" />
+        <img src={image} alt="Github" />
         </div>
         <Search />
         <Info />

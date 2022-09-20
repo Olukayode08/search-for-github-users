@@ -8,15 +8,8 @@ body {
   justify-content: center;
   margin: 0;
   height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-}
-
-.loading-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  margin-top: 3rem;
 }
 
 main {

@@ -99,7 +99,7 @@ const Wrapper = styled.article`
   .follow {
     border: 1px solid black;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 60px;
     margin-top: 20px;
     :hover {
       scale: 1.09;
