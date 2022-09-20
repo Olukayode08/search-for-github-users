@@ -54,9 +54,9 @@ const Card = () => {
             <img src={avatar_url} alt={name} />
           </div>
           <div className='user-info'>
-            <h4 className='location'>{name}</h4>
+            <h4 className='location'>{name ? name : 'Name not found'}</h4>
             <p className='location'>
-              <FaTwitter />@{twitter_username ? twitter_username : 'Unavailable'}
+              <FaTwitter />{twitter_username ? `@${twitter_username}` : 'Unavailable'}
             </p>
           </div>
         </motion.header>
