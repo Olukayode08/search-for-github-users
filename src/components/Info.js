@@ -107,9 +107,6 @@ const Wrapper = styled.section`
     .label{
       margin: 0 5px 0 20px;
     }
-    .icon{
-      font-size: 25px;
-    }
     .pink {
       background: #ffe0f0;
       color: #da4a91;
