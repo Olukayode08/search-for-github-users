@@ -50,13 +50,14 @@ const Card = () => {
         viewport={{ once: false, amount: 0.1 }}
       >
         <motion.header variants={infoVariant}>
-          <div className='user-info'>
+          <div className='user-img'>
             <img src={avatar_url} alt={name} />
           </div>
           <div className='user-info'>
             <h4 className='location'>{name ? name : 'Name not found'}</h4>
             <p className='location'>
-              <FaTwitter />{twitter_username ? `@${twitter_username}` : 'Unavailable'}
+              <FaTwitter />
+              {twitter_username ? `@${twitter_username}` : 'Unavailable'}
             </p>
           </div>
         </motion.header>
@@ -83,9 +84,11 @@ const Card = () => {
             <p>
               <MdLink className='icon' />
             </p>
-            <a className='text' href={`https://${blog}`}>
-              {blog ? blog : 'Portfolio not found'}
-            </a>
+            <p className='text'>
+              <a href={`https://${blog}`}>
+                {blog ? blog : 'Portfolio not found'}
+              </a>
+            </p>
           </motion.div>
         </div>
       </motion.article>
@@ -120,6 +123,10 @@ const Wrapper = styled.article`
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-left: 10px;
+    }
+    .user-img{
+      margin-right: 10px;
     }
   }
   h4 {
