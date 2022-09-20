@@ -151,7 +151,7 @@ const Wrapper = styled.article`
     height: 30px;
     margin: auto;
     .text {
-      padding: 0 10px;
+      padding-left: 5px;
       text-decoration: none;
     }
     .icon {
