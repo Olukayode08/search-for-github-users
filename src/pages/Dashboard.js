@@ -2,14 +2,15 @@ import React from 'react';
 import { Info, Search, Card, Loading } from '../components';
 import {GithubContextApi } from '../context/context';
 import { useContext } from 'react';
-import logo from './download.png'
+import image from '../logo.png';
+
 
 const Dashboard = () => {
     const { loading } = useContext(GithubContextApi);
     if(loading){
       return (
         <main>
-          <Search />
+          <h1 className='loading'>Loading...</h1>
           <Loading />
         </main>
       );
@@ -17,7 +18,10 @@ const Dashboard = () => {
   return (
     <>
       <main>
-        <img src={logo} alt="" />
+        <div className='heading'>
+        <h3 className='header'>Github Developers</h3>
+        <img className='img' src={image} alt="Github" />
+        </div>
         <Search />
         <Info />
         <Card />

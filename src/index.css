@@ -22,3 +22,15 @@ body {
 main {
   padding-bottom: 2rem;
 }
+.loading{
+  font-size: 25px;
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.header{
+  font-size: 47px;
+}
