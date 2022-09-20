@@ -146,7 +146,7 @@ const Wrapper = styled.article`
     align-items: center;
     justify-content: center;
     padding: 0px 0px;
-    height: 30px;
+    height: 35px;
     margin: 5px 0;
     .text {
     padding: 0 10px;

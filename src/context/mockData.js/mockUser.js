@@ -23,7 +23,7 @@ export default{
   location: 'Working from home',
   email: true,
   hireable: true,
-  bio: 'Olukayode Azeez, a FrontEnd developer that builds project with the best User Experience',
+  bio: 'Olukayode Azeez, a FrontEnd developer that builds project with the best user experience',
   twitter_username: "_jireazeez",
   public_repos: 11,
   public_gists: 0,
