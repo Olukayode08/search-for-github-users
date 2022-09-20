@@ -99,7 +99,6 @@ const Wrapper = styled.article`
   .follow {
     border: 1px solid black;
     border-radius: 10px;
-    margin-right: 60px;
     margin-top: 20px;
     :hover {
       scale: 1.09;
@@ -108,7 +107,7 @@ const Wrapper = styled.article`
   header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     .about-user {
       display: flex;
       align-items: center;

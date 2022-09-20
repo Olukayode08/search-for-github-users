@@ -22,7 +22,7 @@ const Dashboard = () => {
       <main>
         <div className='heading'>
         <h3 className='header'>Github Developers</h3>
-        <img src={image} alt="Github" />
+        <img className='github-img' src={image} alt="Github" />
         </div>
         <Search />
         <Info />
