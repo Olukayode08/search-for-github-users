@@ -29,13 +29,5 @@ body {
 }
 .header{
   font-size: 37px;
-  margin: 0;
-  padding: 0;
 }
-.underline{
-  width: 150px;
-  height: 3px;
-  background-color: #000;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
+
