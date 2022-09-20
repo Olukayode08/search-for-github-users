@@ -2,7 +2,7 @@ import React from 'react';
 import { Info, Search, Card, Loading } from '../components';
 import {GithubContextApi } from '../context/context';
 import { useContext } from 'react';
-inport logo from './download.png'
+import logo from './download.png'
 
 const Dashboard = () => {
     const { loading } = useContext(GithubContextApi);
