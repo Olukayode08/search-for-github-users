@@ -115,21 +115,21 @@ const Wrapper = styled.article`
     display: flex;
     align-items: center;
     justify-content: center;
-      .user-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    h4 {
-      font-size: 20px;
-    }
-    img {
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-    }
+  }
+  h4 {
+    font-size: 20px;
+  }
+  img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
   .about {
     display: flex;
     flex-direction: column;
@@ -142,16 +142,18 @@ const Wrapper = styled.article`
     margin: auto;
   }
   .location {
+    max-width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 0px;
+    text-align: center;
+    padding: 5px 0px;
     height: 30px;
-    margin: 5px 0;
+    margin: auto;
     .text {
-    padding: 0 10px;
-    text-decoration: none;
-  }  
+      padding: 0 10px;
+      text-decoration: none;
+    }
     .icon {
       font-size: 25px;
     }
