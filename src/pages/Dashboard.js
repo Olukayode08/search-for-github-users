@@ -22,6 +22,7 @@ const Dashboard = () => {
       <main className='main'>
         <div className='heading'>
         <h3 className='header'>Github Developers</h3>
+        <div className='underline'></div>
         </div>
         <Search className='border' />
         <Info />
