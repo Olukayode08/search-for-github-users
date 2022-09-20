@@ -19,7 +19,7 @@ const Dashboard = () => {
     }
   return (
     <>
-      <main>
+      <main className='main'>
         <div className='heading'>
         <h3 className='header'>Github Developers</h3>
         <img className='github-img' src={image} alt="Github" />

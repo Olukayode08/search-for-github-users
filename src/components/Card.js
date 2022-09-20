@@ -50,19 +50,19 @@ const Card = () => {
         viewport={{ once: false, amount: 0.1 }}
       >
         <motion.header variants={infoVariant}>
-          <div className='about-user'>
+          <div className='user-info'>
             <img src={avatar_url} alt={name} />
-            <div className='user-info'>
-              <h4 className='location'>{name}</h4>
-              <p className='location'>
-                <FaTwitter />@{twitter_username}
-              </p>
-            </div>
           </div>
-          <a className='follow' href={html_url}>
-            Follow
-          </a>
+          <div className='user-info'>
+            <h4 className='location'>{name}</h4>
+            <p className='location'>
+              <FaTwitter />@{twitter_username ? twitter_username : 'Unavailable'}
+            </p>
+          </div>
         </motion.header>
+        <a className='follow' href={html_url}>
+          Preview
+        </a>
         <motion.p className='bio' variants={linkVariants}>
           {bio}
         </motion.p>
@@ -71,20 +71,20 @@ const Card = () => {
             <p>
               <MdBusiness className='icon' />
             </p>
-            <p className='text'>{company}</p>
+            <p className='text'>{company ? company : 'No company found'}</p>
           </motion.div>
           <motion.div variants={linkVariants} className='location'>
             <p>
               <MdLocationOn className='icon' />
             </p>
-            <p className='text'>{location}</p>
+            <p className='text'>{location ? location : 'No location found'}</p>
           </motion.div>
           <motion.div variants={linkVariants} className='location'>
             <p>
               <MdLink className='icon' />
             </p>
             <a className='text' href={`https://${blog}`}>
-              {blog}
+              {blog ? blog : 'Portfolio not found'}
             </a>
           </motion.div>
         </div>
@@ -92,14 +92,21 @@ const Card = () => {
     </Wrapper>
   );
 };
+
 const Wrapper = styled.article`
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 50px;
   .follow {
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 100px;
+    margin: auto;
+    padding: 7px 10px;
+    border-radius: 1rem;
+    cursor: pointer;
     :hover {
       scale: 1.09;
     }
@@ -108,10 +115,6 @@ const Wrapper = styled.article`
     display: flex;
     align-items: center;
     justify-content: center;
-    .about-user {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       .user-info {
         display: flex;
         flex-direction: column;
@@ -127,16 +130,6 @@ const Wrapper = styled.article`
       height: 75px;
       border-radius: 50%;
     }
-    a {
-      color: blue;
-      text-decoration: none;
-      padding: 0.25rem 0.75rem;
-      border-radius: 1rem;
-      text-transform: capitalize;
-      cursor: pointer;
-      color: #000;
-    }
-  }
   .about {
     display: flex;
     flex-direction: column;
@@ -156,9 +149,9 @@ const Wrapper = styled.article`
     height: 30px;
     margin: 5px 0;
     .text {
-      padding: 0 10px;
-      text-decoration: none;
-    }
+    padding: 0 10px;
+    text-decoration: none;
+  }  
     .icon {
       font-size: 25px;
     }

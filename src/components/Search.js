@@ -38,7 +38,7 @@ const Search = () => {
 const Wrapper = styled.div`
   position: relative;
   display: grid;
-  gap: 1rem 1.75rem;
+  gap: 1rem;
   .form-control {
     background-color: #fff;
     display: flex;
@@ -46,6 +46,7 @@ const Wrapper = styled.div`
     justify-content: center;
     border-radius: 20px;
     padding: 0.5rem;
+    border: 1px solid black;
     input {
       border-color: transparent;
       :focus {

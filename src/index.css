@@ -6,17 +6,21 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-  height: 100vh;
+  margin-top: 20px;
+  padding: 0;
+  height: 100%;
+  background: #000;
   overflow: hidden;
-  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
-
-main {
-  padding-bottom: 2rem;
+.main{
+  background-color: #C0C0C0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: auto;
 }
 .loading{
   font-size: 20px;
+  color: #fff;
 }
 .heading{
   display: flex;
@@ -25,7 +29,7 @@ main {
   margin: 0 auto;
 }
 .header{
-  font-size: 47px;
+  font-size: 30px;
 }
 @media screen and (max-width: 800px) {
   .github-img{
