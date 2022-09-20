@@ -10,8 +10,8 @@ const Dashboard = () => {
     if(loading){
       return (
         <>
+          <main className='load'>
           <h1 className='loading'>Loading...</h1>
-          <main>
             <Loading />
           </main>
         </>
@@ -22,9 +22,8 @@ const Dashboard = () => {
       <main className='main'>
         <div className='heading'>
         <h3 className='header'>Github Developers</h3>
-        <img className='github-img' src={image} alt="Github" />
         </div>
-        <Search />
+        <Search className='border' />
         <Info />
         <Card />
       </main>

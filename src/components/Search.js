@@ -45,7 +45,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    padding: 0.5rem;
+    padding: 10px;
     border: 1px solid black;
     input {
       border-color: transparent;
@@ -59,12 +59,12 @@ const Wrapper = styled.div`
       text-transform: capitalize;
     }
     button {
-      border-radius: 5px;
       border-color: transparent;
       padding: 5px 10px;
       text-transform: capitalize;
       background: #000;
-      border-radius: 20px;
+      border-radius: 30px;
+      font-family: inherit;
       cursor: pointer;
       font-size: 17px;
       color: #fff;

@@ -32,28 +32,24 @@ const UserInfo = () => {
       icon: <GoRepo className='icon' />,
       label: 'Repos',
       value: public_repos,
-      color: 'pink',
     },
     {
       id: 2,
-      icon: <FiUsers className='icon' />,
+      icon: <FiUsers />,
       label: 'Followers',
       value: followers,
-      color: 'green',
     },
     {
       id: 3,
-      icon: <FiUserPlus className='icon' />,
+      icon: <FiUserPlus />,
       label: 'Following',
       value: following,
-      color: 'purple',
     },
     {
       id: 4,
-      icon: <GoGist className='icon' />,
+      icon: <GoGist />,
       label: 'Gists',
       value: public_gists,
-      color: 'yellow',
     },
   ];
   
@@ -70,7 +66,7 @@ const UserInfo = () => {
           const { id, icon, label, value, color } = item;
           return (
             <motion.article variants={infoVariant} className='item' key={id}>
-              <span className={color}>{icon}</span>
+              <span className='icon'>{icon}</span>
               <h3 className='label'>
                 {label} ({value})
               </h3>
@@ -94,34 +90,19 @@ const Wrapper = styled.section`
     margin: 10px 0;
     span {
       width: 3rem;
-      height: 3rem;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
+      text-align: right;
+      margin-top: 10px;
     }
-    h3{
+    h3 {
       width: 70%;
       text-align: left;
-      font-size: 18px;
+      font-size: 20px;
     }
-    .label{
+    .label {
       margin: 0 5px 0 20px;
     }
-    .pink {
-      background: #ffe0f0;
-      color: #da4a91;
-    }
-    .green {
-      background: #fff;
-      color: #000;
-    }
-    .purple {
-      background: #e6e6ff;
-      color: #5d55fa;
-    }
-    .yellow {
-      background: #fffbea;
-      color: #f0b429;
+    .icon {
+      font-size: 25px;
     }
   }
 `;

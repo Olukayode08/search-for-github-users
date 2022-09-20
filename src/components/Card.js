@@ -55,18 +55,14 @@ const Card = () => {
           </div>
           <div className='user-info'>
             <h4 className='location'>{name ? name : 'Name not found'}</h4>
-            <p className='location'>
+            <p className='location text'>
               <FaTwitter />
               {twitter_username ? `@${twitter_username}` : 'Unavailable'}
             </p>
           </div>
         </motion.header>
-        <a className='follow' href={html_url}>
-          Preview
-        </a>
-        <motion.p className='bio' variants={linkVariants}>
-          {bio}
-        </motion.p>
+        <a className='follow' href={html_url}>Preview</a>
+        <motion.p className='bio' variants={linkVariants}>{bio}</motion.p>
         <div className='about'>
           <motion.div variants={linkVariants} className='location'>
             <p>
@@ -106,8 +102,9 @@ const Wrapper = styled.article`
     justify-content: center;
     text-decoration: none;
     max-width: 100px;
+    font-size: 15px;
     margin: auto;
-    padding: 7px 10px;
+    padding: 3px 7px;
     border-radius: 1rem;
     cursor: pointer;
     :hover {
@@ -125,7 +122,7 @@ const Wrapper = styled.article`
       justify-content: center;
       margin-left: 10px;
     }
-    .user-img{
+    .user-img {
       margin-right: 10px;
     }
   }
@@ -137,16 +134,18 @@ const Wrapper = styled.article`
     height: 75px;
     border-radius: 50%;
   }
+  .bio {
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 9px;
+  }
   .about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .bio {
-    max-width: 350px;
-    text-align: center;
-    margin: auto;
   }
   .location {
     max-width: 350px;
@@ -155,14 +154,15 @@ const Wrapper = styled.article`
     justify-content: center;
     text-align: center;
     padding: 5px 0px;
-    height: 30px;
+    height: 20px;
     margin: auto;
     .text {
       padding-left: 5px;
       text-decoration: none;
+      font-size: 16px;
     }
     .icon {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 `;
