@@ -3,6 +3,7 @@ import { Info, Search, Card, Loading } from '../components';
 import {GithubContextApi } from '../context/context';
 import { useContext } from 'react';
 import image from '../logo.png';
+import {Link} from 'react-router-dom' 
 
 
 const Dashboard = () => {
@@ -19,7 +20,7 @@ const Dashboard = () => {
     }
   return (
     <>
-      <main className='main'>
+      <Link to='/' className='main'>
         <div className='heading'>
         <h3 className='header'>Github Developers</h3>
         <div className='underline'></div>
@@ -27,7 +28,7 @@ const Dashboard = () => {
         <Search className='border' />
         <Info />
         <Card />
-      </main>
+      </Link>
     </>
   );
 };
